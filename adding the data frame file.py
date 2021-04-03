@@ -11,7 +11,7 @@ data_dirs = ["Training_Batch_Files","Prediction_Batch_files"]
 for data_dir in data_dirs:
     files = glob(data_dir + r"/*.csv")
     for filePath in files:
-        # print(f"dvc add {filePath}")
-        os.system(f"dvc add https://github.com/Tusharroul/mlops_mains.git")
+        print(f"dvc add https://github.com/Tusharroul/mlops_mains.git")
+        #os.system(f"dvc add https://github.com/Tusharroul/mlops_mains.git")
 
 print("\n #### all files added to dvc ####")
